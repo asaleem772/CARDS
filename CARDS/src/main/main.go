@@ -1,17 +1,19 @@
 package main
 
-//var deck int
+//import (
+//	"fmt"
+//)
 
-//card := "Ace of Spades"
 func main() {
 
 	cards := newDeck()
-	//	cards.print()
-	hand, remainingCards := deal(cards, 5)
+	cards.shuffle()
+	cards.print()
+	//	cards.saveToFile("cards")
+	//
+	//	newcards := newDeckFromFile("scards")
+	//	newcards.print()
 
-	hand.print()
-
-	remainingCards.print()
 }
 
 func getCard() string {
